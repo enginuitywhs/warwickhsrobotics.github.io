@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<!-- TEAM ENGINUITY
+     FTC 5969 / FRC 4538
+     DESIGN BY JONATHAN LACSON
+     INSPIRED BY TRIPLE HELIX - FRC 2363 (www.triplehelixrobotics.org)
+
+     CODED BY HAND IN BRACKETS
+     VERSION 0.3.5 - 30 JAN 2014            -->
+    
+<!-- NOTHING YOU SEE IS FINAL;
+     BUT AT THIS POINT IT PROBABLY WILL BE  -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500|Open+Sans:400,700|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="./css/universal.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Team Enginuity</title>
+    <meta name='description' content="Team Enginuity is Warwick High School's Robotics Team in Newport News, Virginia" />
+</head>
+
+<body>
+    <div id="page">
+        <! -- HEADER BEGINS HERE -->
+        <div id="header">
+            <div id="header-logo">
+                <a href="./index.html"><img src=./assets/hf/headerlogo.png></a>
+            </div>
+            <div id="header-text">
+                <h1 title="Pronounced en·gi·new·i·ty">Team Enginuity</h1>
+                <h2><strong>FTC #5969 | FRC #4538</strong></h2>
+            </div>
+            <div id="header-firstlogo">
+                <a href="http://www.usfirst.org" target="_blank" title="Link to FIRST"><img src=./assets/hf/firstlogo.png /></a>        
+            </div>
+        </div>
+        <! -- HEADER ENDS HERE -->
+        <div id="main">
+            <! -- SIDEBAR BEGINS HERE -->
+            <div id="main-sidebar">
+                <p><a target="cstage" href="./home.html">Home</a></p>
+                <p><a target="cstage" href="./team.html">Team</a></p>
+                <p><a target="cstage" href="./sponsors.html">Sponsors</a></p>
+                <p><a target="cstage" href="./contact.html">Contact Us</a></p>
+                <p><a target="cstage" href="./first.html">About <em>FIRST</em></a></p>
+                <p><a target="cstage" href="./FTC.html">FTC</a></p>
+                <p><a target="cstage" href="./FRC.html">FRC</a></p>
+                <p><a target="cstage" href="./media.html">Media</a></p>
+                <p><a target="cstage" href="./events.html">Events</a></p>
+                <p><a target="cstage" href="./links.html">Useful Links</a></p>
+                <! -- TWITTER WIDGET -->
+                <a class="twitter-timeline" data-dnt="true" width="180" height="450" data-chrome="nofooter noborders transparent" href="https://twitter.com/EnginuityWHS" data-widget-id="422480523475165184">Tweets by @EnginuityWHS</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <! -- END TWITTER WIDGET -->
+            </div>
+            <! -- SIDEBAR ENDS HERE -->
+            <div id="main-content">
+                <iframe name="cstage" src="home.html" width="100%" height="100%" id="main-content-iframe" frameborder="0">If you're seeing this message, it means IFrames are not supported; Please enable IFrames or upgrade to a compatible browser that supports IFrames.</iframe>
+                <script>
+                    $( "iframe" ).on('load',function() {
+                        document.title = document.getElementById("main-content-iframe").contentDocument.title;
+                    });
+                </script>
+            </div>
+        </div>
+        <! -- FOOTER BEGINS HERE -->
+        <div id="footer">
+            <div id="footer-top">
+	            <div id="footer-leagues" class="center">
+	                <p><a target="_blank" title="FRC Information" href="http://usfirst.org/frc"><img src="./assets/hf/frc1.png"></a></p>
+	                <p><a target="_blank" title="FTC Information" href="http://usfirst.org/ftc"><img src="./assets/hf/ftc1.png"></a></p>
+	            </div>
+	            <div id="footer-whs">
+	                <p><a href="http://warwick.nn.k12.va.us">Warwick High School</a><br>
+	                51 Copeland Lane<br>
+	                Newport News, Virginia<br>
+	                23601<br>
+	                (757) 591-4700
+	            </div>
+	            <div id="footer-socialmedia">
+	                <p><a target="_blank" title="Like Us on Facebook" href="http://www.facebook.com/USERNAME"><img src="./assets/hf/facebook.png"></a></p>
+	                <p><a target="_blank" title="Follow Us on Twitter" href="http://www.twitter.com/EnginuityWHS"><img src="./assets/hf/twitter.png"></a></p>
+	                <p><a target="_blank" title="Follow Us on Instagram" href="http://www.instagram.com/EnginuityWHS"><img src="./assets/hf/ig.png"></a></p>
+	            </div>
+            </div>
+            <div id="footer-bottom">
+                <div id="footer-bottom-info">
+            	   <p>Hosted with Github Pages | View Source Code | Made from scratch using <a target="_blank" href="http://brackets.io">Brackets</a> | Site looks best on <a target="_blank" href="http://www.mozilla.com/firefox">Firefox</a> or <a target="_blank" href="http://www.google.com/chrome">Chrome</a></p>
+                </div>
+            </div>
+        </div>
+        <! -- FOOTER ENDS HERE -->
+    </div>
+</body>
+</html>
