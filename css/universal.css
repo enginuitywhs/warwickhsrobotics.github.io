@@ -95,10 +95,6 @@ body {
     padding-left: 20px;
 }
 
-#au-table < tr td:nth-child(2) {
-    padding-bottom: 40px;
-}
-
 #au-table tr td p:last-child:after {
     content: " ";
 }
@@ -181,8 +177,31 @@ body {
 .gamelinks a:hover {
     font-weight: bold;
     color: #A60000;
+    padding-left: 20px;
 }
 
 .gametext {
     display: block;
+    float: right;
+}
+
+/* Links */
+
+.linkdesc {
+    font-size: 0.8em;
+}
+
+#links a {
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    text-decoration: none;
+    color: #000;
+}
+
+#links a:hover {
+    font-weight: bold;
+    padding-left: 20px;
+    color: #A60000;
 }
