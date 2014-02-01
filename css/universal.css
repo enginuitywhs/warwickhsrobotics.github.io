@@ -114,7 +114,8 @@ body {
 
 #sp-logos {
     width: 50%;
-    float: left;
+    margin: 0 auto;
+/*    float: left;*/
 }
 
 #sp-logos img {
