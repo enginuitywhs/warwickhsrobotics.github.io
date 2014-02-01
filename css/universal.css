@@ -110,12 +110,15 @@ body {
     font-size: 0.8em;
 }
 
+#au-table .normalp p {
+    font-size: 1em;
+}
+
 /* Sponsors - Logos */
 
 #sp-logos {
     width: 50%;
-    margin: 0 auto;
-/*    float: left;*/
+    float: left;
 }
 
 #sp-logos img {
