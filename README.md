@@ -1,10 +1,13 @@
-Redesigned Branch
+Team Enginuity
 ===========================
-(sneak peek at redesign)
+Version 0.5 -- Redesigned!
 
 Source Code of Team Enginuity's website
+
 Built on Brackets
+
 Mostly HTML5 and CSS3 -- Does not contain much JS/jQuery
+
 
 Resources referenced:
 ---------------------------
