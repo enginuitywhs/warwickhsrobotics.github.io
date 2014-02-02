@@ -1,0 +1,114 @@
+// TEAM ENGINUITY
+// FTC 5969 | FRC 4538
+// DESIGN BY JONATHAN LACSON
+// LESS (CSS) -- UNIVERSAL
+// CODED IN BRACKETS
+
+// VARIABLES
+
+@col-tx: #F2F2F2;
+@col-ln: #727272;
+
+@def-padding: 10px;
+.side-padding (@padding: @def-padding) {
+    padding-left: @padding;
+    padding-right: @padding;
+}
+
+.smoothtrans {
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+}
+
+.small(@smallperc: 50%) {
+    width: @smallperc;
+    height: @smallperc;
+}
+
+/* FONT SELECTION */
+
+* {
+    color: @col-tx;
+}
+
+h1 {
+    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Droid Sans', Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+}
+
+/* REUSED */
+
+.youtube {
+    box-shadow: 3px 3px 3px #000;
+}
+
+/* HOME */
+
+#teamphoto {
+    width: 500px;
+    height: 300px;
+    border: 1px solid @col-tx;
+    margin: auto;
+}
+
+/* TEAM TABLE */
+@sep: 20px;
+
+#team-table {
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+#team-table tr td {
+    vertical-align: middle;
+}
+
+#team-table tr td:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: right;
+    padding-right: (@sep / 2);
+    border-right: 1px solid @col-tx;
+}
+
+#team-table tr td:nth-child(2) {
+    padding-left: (@sep / 2);
+}
+
+#team-table tr td p:last-child:after {
+    content: " ";
+}
+
+#team-table tr td p:after {
+    content: ",";
+}
+
+#team-table thead tr td {
+    text-transform: none;
+    border-bottom: 1px solid @col-tx;
+}
+
+#team-table tr td p {
+    display: inline;
+    border: 0;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+#team-table .normalp p {
+    font-size: 1em;
+}

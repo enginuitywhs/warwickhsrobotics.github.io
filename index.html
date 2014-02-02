@@ -3,12 +3,11 @@
     
 <!--
      TEAM ENGINUITY
-     FTC 5969 / FRC 4538
+     FTC 5969 | FRC 4538
      DESIGN BY JONATHAN LACSON
-     INSPIRED BY TRIPLE HELIX - FRC 2363 (www.triplehelixrobotics.org)
 
      CODED BY HAND IN BRACKETS
-     VERSION 0.5e - 31 JAN 2014
+     VERSION 0.5e - 2 FEB 2014
 -->
 
 <head>
@@ -19,7 +18,11 @@
     <link href="./css/index.css" rel="stylesheet" type="text/css">
 <!--jQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <title>ENGINUITY EXPERIMENTAL</title>
+<!--OTHER-->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Team Enginuity</title>
+    <meta name='description' content="Second-Year FTC and FRC Team with lots of potential from Newport News, Virginia">
 </head>
 
 <body>
@@ -37,31 +40,56 @@
             </div>
         </div>
         <div id="navbar">
-            <p>Home</p>
-            <p>Team</p>
-            <p>Sponsors</p>
-            <p>Contact</p>
-            <p>About FIRST</p>
-            <p>FTC</p>
-            <p>FRC</p>
-            <p>Media</p>
-            <p>Events</p>
-            <p>Links</p>
+            <p><a target="cstage" href="./home.html">Home</a></p>
+            <p><a target="cstage" href="./team.html">Team</a></p>
+            <p><a target="cstage" href="./sponsors.html">Sponsors</a></p>
+            <p><a target="cstage" href="./contact.html">Contact</a></p>
+            <p><a target="cstage" href="./first.html">About FIRST</a></p>
+            <p><a target="cstage" href="./ftc.html">FTC</a></p>
+            <p><a target="cstage" href="./frc.html">FRC</a></p>
+            <p><a target="cstage" href="./media.html">Media</a></p>
+            <p><a target="cstage" href="./events.html">Events</a></p>
+            <p><a target="cstage" href="./links.html">Links</a></p>
         </div>
         <div id="main">
-            CONTENT
+            <iframe name="cstage" src="home.html" width="100%" height="1210px" id="main-content-iframe" frameborder="0">If you're seeing this message, it means IFrames are not supported; Please enable IFrames or upgrade to a compatible browser that supports IFrames.</iframe>
+            <script>
+                $( "iframe" ).on('load',function() {
+                    document.title = document.getElementById("main-content-iframe").contentDocument.title;
+                });
+            </script>
         </div>
         <div id="footer">
-            FOOTER
+            <div id="footer-top">
+                <div id="footer-leagues" class="center">
+                    <p><a target="_blank" title="FRC Information" href="http://usfirst.org/frc"><img alt="FRC logo" src="./assets/hf/frc1.png"></a></p>
+                    <p><a target="_blank" title="FTC Information" href="http://usfirst.org/ftc"><img alt="FTC logo" src="./assets/hf/ftc1.png"></a></p>
+                </div>
+                <div id="footer-whs">
+                    <p><a href="http://warwick.nn.k12.va.us">Warwick High School</a><br>
+                    51 Copeland Lane<br>
+                    Newport News, Virginia<br>
+                    23601<br>
+                    (757) 591-4700
+                </div>
+                <div id="footer-socialmedia">
+                    <p><a target="_blank" title="Like Us on Facebook" href="https://www.facebook.com/pages/Team-Enginuity-Warwick-High-School-Robotics-Team/574751449237559"><img alt="Facebook logo" src="./assets/hf/facebook.png"></a></p>
+                    <p><a target="_blank" title="Follow Us on Twitter" href="http://www.twitter.com/EnginuityWHS"><img alt="Twitter logo" src="./assets/hf/twitter.png"></a></p>
+                    <p><a target="_blank" title="Follow Us on Instagram" href="http://www.instagram.com/EnginuityWHS"><img alt="Instagram Logo" src="./assets/hf/ig.png"></a></p>
+                </div>
+            </div>
         </div>
     </div>
-<!--KEEPS NAVBAR BELOW HEADER, BUT STICKS TO THE TOP-->
+<!--
+    KEEPS NAVBAR BELOW HEADER, BUT STICKS TO THE TOP
+    ADD TOTAL PADDING (TOP AND BOTTOM) TO H
+-->
     <script>
         $(window).scroll(function(){
             var s=$(this).scrollTop(),
                 h=$('#header').height();
             if(s<h)
-                $('#navbar').css('top',h-s);
+                $('#navbar').css('top',(h+10)-s);
             else
                 $('#navbar').css('top',0);
             });
