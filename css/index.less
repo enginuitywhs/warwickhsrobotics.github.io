@@ -156,21 +156,29 @@ a {
     vertical-align: middle;
     .side-padding(5px);
     /* STYLING */
+    text-transform: uppercase;
     text-align: center;
     color: @col-tx;
-    text-transform: uppercase;
     .smoothtrans;
 }
 
 #navbar p:hover {
-    font-weight: bold;
-    background: #B20404;
+    background: (@col-hf - 50);
     color: @col-ln;
+    font-weight: bold;
 }
 
 #navbar p a {
     color: @col-tx;
     text-decoration: none;
+}
+
+#navbar:hover > p {
+    opacity: 0.5;
+}
+
+#navbar:hover > p:hover {
+    opacity: 1.0;
 }
 
 /* CONTENT */
@@ -193,6 +201,7 @@ a {
     /* STYLING */
     background: @col-hf;
     display: table;
+    table-layout: fixed;
     .side-padding;
     .bottomround;
 }
@@ -207,6 +216,7 @@ a {
 }
 
 #footer-bottom {
+    width: 100%;
     display: table-row;
 }
 
@@ -238,39 +248,48 @@ a {
 #footer-whs {
     font-size: 0.8em;
     display: table-cell;
-    width: 20%;
+    width: 70%;
     padding-left: 2%;
 }
 
 /* Social Media Logos */
 
 #footer-socialmedia {
-    width: 60%;
+    width: 10%;
     display: table-cell;
+    padding-top: 10px;
 }
 
 #footer-socialmedia p {
-    display: inline;
+    padding-left: 20px;
+    text-align: center;
+    margin: 0;
+    .smoothtrans;
+}
+
+#footer-socialmedia p:first-child,
+#footer-socialmedia p:nth-child(2) {
+    padding-bottom: 10px;
 }
 
 #footer-socialmedia img {
-    padding: 30px;
-    height: 50px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out; 
-    -o-transition: all 0.25s ease-in-out; 
-    -ms-transition: all 0.25s ease-in-out; 
+    height: 35px;
+    .smoothtrans
 }
 
-#footer-socialmedia img:hover {
-    height: 75px;
+#footer-socialmedia:hover > p {
+    opacity: 0.5;
+}
+
+#footer-socialmedia:hover > p:hover {
+    opacity: 1.0;
 }
 
 /* Bottom Info */
 
 #footer-bottom-info {
+    width: (@width - (@def-padding * 2));
     line-height: 10%;
-    width: 960px;
     font-size: 0.75em;
     text-align: center;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif

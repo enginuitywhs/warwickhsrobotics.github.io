@@ -23,11 +23,11 @@
     padding-right: @padding;
 }
 
-.smoothtrans {
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    -ms-transition: all 0.15s linear;
+.smoothtrans (@delay: 0.15s) {
+    -webkit-transition: all @delay linear;
+    -moz-transition: all @delay linear;
+    -o-transition: all @delay linear;
+    -ms-transition: all @delay linear;
 }
 
 .bottomround {
