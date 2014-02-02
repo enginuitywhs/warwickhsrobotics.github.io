@@ -1,0 +1,221 @@
+// TEAM ENGINUITY
+// FTC 5969 | FRC 4538
+// DESIGN BY JONATHAN LACSON
+// LESS (CSS) -- UNIVERSAL
+// CODED IN BRACKETS
+
+// VARIABLES
+@import "vars.less";
+
+.small(@smallperc: 50%) {
+    width: @smallperc;
+    height: @smallperc;
+}
+
+/* FONT SELECTION */
+
+* {
+    color: @col-tx;
+}
+
+a {
+    color: @col-ln;
+    text-decoration: none;
+    .smoothtrans(0.05s);
+}
+
+a:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Droid Sans', Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+}
+
+/* FONT CLASSES */
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* REUSED */
+
+.youtube {
+    box-shadow: 3px 3px 3px #000;
+}
+
+/* HOME */
+
+#teamphoto-box {
+    width: 500px;
+    height: 300px;
+    border: 1px solid @col-tx;
+    margin: auto;
+}
+
+/* TEAM TABLE */
+@sep: 20px;
+
+#team-table {
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+#team-table tr td {
+    vertical-align: middle;
+}
+
+#team-table tr td:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: right;
+    padding-right: (@sep / 2);
+    border-right: 1px solid @col-tx;
+}
+
+#team-table tr td:nth-child(2) {
+    padding-left: (@sep / 2);
+}
+
+#team-table tr td p:last-child:after {
+    content: " ";
+}
+
+#team-table tr td p:after {
+    content: ",";
+}
+
+#team-table thead tr td {
+    text-transform: none;
+    border-bottom: 1px solid @col-tx;
+}
+
+#team-table tr td p {
+    display: inline;
+    border: 0;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+#team-table .normalp p {
+    font-size: 1em;
+}
+
+/* Sponsors */
+
+#sp-logos {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+}
+
+#sp-logos img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
+
+#sp-people {
+    width: 50%;
+    float: right;
+}
+
+/* GAME INFORMATION */
+
+.gameinfo {
+    margin: 0 auto;
+    table-layout: fixed;
+    padding-bottom: 20px;
+}
+
+.gameinfo * {
+    vertical-align: middle;
+}
+
+.gameinfo .gamelogo {
+    padding-right: 20px;
+    border-right: 1px solid black;
+}
+
+.gameinfo .gamelogo img {
+    width: 200px;
+}
+
+.gameinfo .gamevideo {
+    padding-left: 20px;
+}
+
+.gamecontainer {
+    display: block;
+}
+
+.gamelinks {
+    float: left;
+    height: 100%;
+}
+
+.gamelinks a {
+    .smoothtrans;
+    text-decoration: none;
+    color: @col-tx;
+}
+
+.gamelinks a:hover {
+    font-weight: bold;
+    color: @col-ln;
+    padding-left: 20px;
+}
+
+.gametext {
+    display: block;
+    float: right;
+}
+
+/* CALENDAR */
+
+#ev-gcal {
+    display: block;
+    margin: auto;
+}
+
+/* LINKS */
+
+.linkdesc {
+    font-size: 0.8em;
+}
+
+#links a {
+    .smoothtrans;
+    text-decoration: none;
+    color: @col-tx;
+}
+
+#links a:hover {
+    font-weight: bold;
+    padding-left: 20px;
+    color: @col-ln;
+}

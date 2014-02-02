@@ -1,0 +1,296 @@
+// TEAM ENGINUITY
+// FTC 5969 | FRC 4538
+// DESIGN BY JONATHAN LACSON
+// LESS (CSS) -- INDEX PAGE ONLY!
+// CODED IN BRACKETS
+
+// VARIABLES
+@import "vars.less";
+
+/* LAYOUT */
+
+html, body {
+    padding: 0;
+    margin: auto;
+    height: 1550px;
+}
+
+html {
+    background-color: @col-bg;
+}
+
+body {
+    /* BASE CODE */
+    padding: 0;
+    width: @width;
+    /* STYLING */
+    background: @col-bd;
+    .bottomround;
+    -webkit-box-shadow: 0px 0px 8px 2px #000000;
+       -moz-box-shadow: 0px 0px 8px 2px #000000;
+            box-shadow: 0px 0px 8px 2px #000000;
+}
+
+#page {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+}
+
+a {
+    color: @col-ln;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+#header {
+    /* BASE CODE */
+    height: @height-hf;
+    width: (@width - (@def-padding * 2));
+    /* STYLING */
+    background: @col-hf;
+    color: @col-tx;
+    display: table;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .side-padding;
+}
+
+#header-logo {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+#header-logo img {
+    width: 150px;
+    height: 150px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+}
+
+#header-logo img:hover {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+}
+
+#header-text {
+    width: 600px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+
+@ht-lnspc: 10px;
+#header-text h1 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 300%;
+    text-transform: none;
+    margin-bottom: (@ht-lnspc / 2);
+}
+
+#header-text h2 {
+    vertical-align: middle;
+    margin-top: (@ht-lnspc / 2);
+}
+
+#header a {
+    color: @col-tx;
+    text-decoration: none;
+}
+
+#header a:visited {
+    color: @col-tx;
+}
+
+#header-firstlogo {
+    width: 150px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header-firstlogo img {
+    width: 150px;
+}
+
+/* NAVBAR */
+
+#navbar {
+    /* BASE CODE */
+    position: fixed;
+    z-index: 10;
+    width: @width;
+    height: @height-nav;
+    /* STYLING */
+    background: @col-hf;
+    display: table;
+    .bottomround;
+}
+
+#navbar:after {
+    content: "";
+    width: 950px;
+    height: 0px;
+    margin-top: 48px;
+    margin-left: -475px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+    -webkit-box-shadow: 0px 0px 8px 2px #000000;
+       -moz-box-shadow: 0px 0px 8px 2px #000000;
+            box-shadow: 0px 0px 8px 2px #000000;
+}
+
+#navbar p {
+    /* LAYOUT */
+    display: table-cell;
+    // MUST BE UPDATED IF MORE LINKS ARE ADDED
+    width: (@width / 10);
+    vertical-align: middle;
+    .side-padding(5px);
+    /* STYLING */
+    text-transform: uppercase;
+    text-align: center;
+    color: @col-tx;
+    .smoothtrans;
+}
+
+#navbar p:hover {
+    background: (@col-hf - 50);
+    color: @col-ln;
+    font-weight: bold;
+}
+
+#navbar p a {
+    color: @col-tx;
+    text-decoration: none;
+}
+
+#navbar:hover > p {
+    opacity: 0.5;
+}
+
+#navbar:hover > p:hover {
+    opacity: 1.0;
+}
+
+/* CONTENT */
+
+#main {
+    margin-top: (@height-nav);
+//    padding-top: (@height-nav + 10);
+    padding-bottom: @height-hf;
+    .side-padding;
+}
+
+/* FOOTER */
+
+#footer {
+    /* BASE CODE */
+    position: absolute;
+    width: (@width - (@def-padding * 2));
+    bottom: 0;
+    height: @height-hf;
+    /* STYLING */
+    background: @col-hf;
+    display: table;
+    table-layout: fixed;
+    .side-padding;
+    .bottomround;
+}
+
+#footer * {
+    vertical-align: middle;
+    padding: 0;
+}
+
+#footer-top {
+    display: table-row;
+}
+
+#footer-bottom {
+    width: 100%;
+    display: table-row;
+}
+
+/* FTC/FRC logos */
+
+#footer-leagues {
+    width: 20%;
+    display: table-cell;
+}
+
+#footer-leagues img {
+    height: 50px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out; 
+    -o-transition: all 0.25s ease-in-out; 
+    -ms-transition: all 0.25s ease-in-out;
+}
+
+#footer-leagues img {
+    background: @col-tx;
+}
+
+#footer-leagues img:hover {
+    background: @col-ln;
+}
+
+/* Warwick HS Info */
+
+#footer-whs {
+    font-size: 0.8em;
+    display: table-cell;
+    width: 70%;
+    padding-left: 2%;
+}
+
+/* Social Media Logos */
+
+#footer-socialmedia {
+    width: 10%;
+    display: table-cell;
+    padding-top: 10px;
+}
+
+#footer-socialmedia p {
+    padding-left: 20px;
+    text-align: center;
+    margin: 0;
+    .smoothtrans;
+}
+
+#footer-socialmedia p:first-child,
+#footer-socialmedia p:nth-child(2) {
+    padding-bottom: 10px;
+}
+
+#footer-socialmedia img {
+    height: 35px;
+    .smoothtrans
+}
+
+#footer-socialmedia:hover > p {
+    opacity: 0.5;
+}
+
+#footer-socialmedia:hover > p:hover {
+    opacity: 1.0;
+}
+
+/* Bottom Info */
+
+#footer-bottom-info {
+    width: (@width - (@def-padding * 2));
+    line-height: 10%;
+    font-size: 0.75em;
+    text-align: center;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif
+}
