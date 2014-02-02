@@ -19,13 +19,110 @@ body {
   height: 100%;
   position: relative;
 }
-#main {
-  padding-bottom: 150px;
-}
 /* HEADER */
-#top {
+#header {
+  /* BASE CODE */
   height: 150px;
-  width: 100%;
+  width: 940px;
+  /* STYLING */
   background: #590202;
   color: #f2f2f2;
+  display: table;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#header-logo {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+#header-logo img {
+  width: 150px;
+  height: 150px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+}
+#header-logo img:hover {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+}
+#header-text {
+  width: 600px;
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  padding-bottom: 25px;
+}
+#header-text h1 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 300%;
+}
+#header-text h2 {
+  vertical-align: middle;
+  line-height: 30%;
+}
+#header a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+#header a:visited {
+  color: #f2f2f2;
+}
+#header-firstlogo {
+  width: 150px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#header-firstlogo img {
+  width: 150px;
+}
+/* NAVBAR */
+#navbar {
+  /* BASE CODE */
+  position: fixed;
+  z-index: 10;
+  width: 960px;
+  height: 50px;
+  /* STYLING */
+  background: #590202;
+  display: table;
+}
+#navbar p {
+  /* LAYOUT */
+  display: table-cell;
+  width: 96px;
+  vertical-align: middle;
+  /* STYLING */
+  text-align: center;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  border-right: 1px solid #f2f2f2;
+}
+#navbar p:last-child {
+  border-right: 0;
+}
+/* CONTENT */
+#main {
+  padding-top: 60px;
+  padding-bottom: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* FOOTER */
+#footer {
+  /* BASE CODE */
+  position: absolute;
+  width: 940px;
+  bottom: 0;
+  height: 150px;
+  /* STYLING */
+  background: #590202;
+  display: table;
+  padding-left: 10px;
+  padding-right: 10px;
 }

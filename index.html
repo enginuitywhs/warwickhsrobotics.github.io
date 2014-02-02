@@ -1,38 +1,69 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     
-<!-- TEAM ENGINUITY
+<!--
+     TEAM ENGINUITY
      FTC 5969 / FRC 4538
      DESIGN BY JONATHAN LACSON
      INSPIRED BY TRIPLE HELIX - FRC 2363 (www.triplehelixrobotics.org)
 
      CODED BY HAND IN BRACKETS
-     VERSION 0.5e - 31 JAN 2014            -->
+     VERSION 0.5e - 31 JAN 2014
+-->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--CSS-->
     <link href='http://fonts.googleapis.com/css?family=Raleway:500|Open+Sans:400,700|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="./css/universal.css" rel="stylesheet" type="text/css">
     <link href="./css/index.css" rel="stylesheet" type="text/css">
+<!--jQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>ENGINUITY EXPERIMENTAL</title>
 </head>
 
 <body>
     <div id="page">
-        <div id="top">
-            <div id="header">
-
+        <div id="header">
+            <div id="header-logo">
+                <a href="./index.html"><img alt="Team Logo" src=./assets/hf/headerlogo.png></a>
             </div>
-            <div id="nav">
-
+            <div id="header-text">
+                <h1 title="Pronounced en·gi·new·i·ty">Team Enginuity</h1>
+                <h2><strong>FTC #5969 | FRC #4538</strong></h2>
             </div>
+            <div id="header-firstlogo">
+                <a href="http://www.usfirst.org" target="_blank" title="Link to FIRST"><img alt="FIRST logo" src=./assets/hf/firstlogo.png /></a>
+            </div>
+        </div>
+        <div id="navbar">
+            <p>Home</p>
+            <p>Team</p>
+            <p>Sponsors</p>
+            <p>Contact</p>
+            <p>About FIRST</p>
+            <p>FTC</p>
+            <p>FRC</p>
+            <p>Media</p>
+            <p>Events</p>
+            <p>Links</p>
         </div>
         <div id="main">
-
+            CONTENT
+        </div>
+        <div id="footer">
+            FOOTER
         </div>
     </div>
-    <div id="footer">
-
-    </div>
+<!--KEEPS NAVBAR BELOW HEADER, BUT STICKS TO THE TOP-->
+    <script>
+        $(window).scroll(function(){
+            var s=$(this).scrollTop(),
+                h=$('#header').height();
+            if(s<h)
+                $('#navbar').css('top',h-s);
+            else
+                $('#navbar').css('top',0);
+            });
+    </script>
 </body>

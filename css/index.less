@@ -9,9 +9,19 @@
 @col-hf: #590202;
 @col-nv: 'col-hf';
 @col-bd: #BF0404;
+
 @col-tx: #F2F2F2;
+@col-ln: #A6A6A6;
 
 @height-hf: 150px;
+@height-nav: 50px;
+@width: 960px;
+
+@def-padding: 10px;
+.side-padding (@padding: @def-padding) {
+    padding-left: @padding;
+    padding-right: @padding;
+}
 
 /* LAYOUT */
 
@@ -27,7 +37,7 @@ html {
 
 body {
     padding: 0;
-    width: 960px;
+    width: @width;
     background: @col-bd;
 }
 
@@ -37,16 +47,127 @@ body {
     position: relative;
 }
 
-#main {
-    padding-bottom: @height-hf;
-}
-
 /* HEADER */
 
-#top {
+#header {
+    /* BASE CODE */
     height: @height-hf;
-    width: 100%;
+    width: (@width - (@def-padding * 2));
+    /* STYLING */
     background: @col-hf;
+    color: @col-tx;
+    display: table;
+    .side-padding;
+}
+
+#header-logo {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+#header-logo img {
+    width: 150px;
+    height: 150px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+}
+
+#header-logo img:hover {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+}
+
+#header-text {
+    width: 600px;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    padding-bottom: 25px;
+}
+
+#header-text h1 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 300%;
+}
+
+#header-text h2 {
+    vertical-align: middle;
+    line-height: 30%;
+}
+
+#header a {
+    color: @col-tx;
+    text-decoration: none;
+}
+
+#header a:visited {
     color: @col-tx;
 }
 
+#header-firstlogo {
+    width: 150px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header-firstlogo img {
+    width: 150px;
+}
+
+/* NAVBAR */
+
+#navbar {
+    /* BASE CODE */
+    position: fixed;
+    z-index: 10;
+    width: @width;
+    height: @height-nav;
+    /* STYLING */
+    background: @col-hf;
+    display: table;
+}
+
+#navbar p {
+    /* LAYOUT */
+    display: table-cell;
+    // MUST BE UPDATED IF MORE LINKS ARE ADDED
+    width: (@width / 10);
+    vertical-align: middle;
+    /* STYLING */
+    text-align: center;
+    color: @col-tx;
+    text-transform: uppercase;
+    border-right: 1px solid @col-tx;
+}
+
+#navbar p:last-child {
+    border-right: 0;
+}
+
+/* CONTENT */
+
+#main {
+    padding-top: (@height-nav + 10);
+    padding-bottom: @height-hf;
+    .side-padding;
+}
+
+/* FOOTER */
+
+#footer {
+    /* BASE CODE */
+    position: absolute;
+    width: (@width - (@def-padding * 2));
+    bottom: 0;
+    height: @height-hf;
+    /* STYLING */
+    background: @col-hf;
+    display: table;
+    .side-padding;
+}
