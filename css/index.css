@@ -5,6 +5,10 @@
   -o-transition: all 0.15s linear;
   -ms-transition: all 0.15s linear;
 }
+.bottomround {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 /* LAYOUT */
 html,
 body {
@@ -13,19 +17,28 @@ body {
   height: 1550px;
 }
 html {
-  background: radial-gradient(#000000 15%, transparent 16%) 0 0, radial-gradient(#000000 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
   background-color: #4a0101;
-  background-size: 16px 16px;
 }
 body {
+  /* BASE CODE */
   padding: 0;
   width: 960px;
-  background: #7f0303;
+  /* STYLING */
+  background: #a30303;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px 2px #000000;
+  -moz-box-shadow: 0px 0px 8px 2px #000000;
+  box-shadow: 0px 0px 8px 2px #000000;
 }
 #page {
   min-height: 100%;
   height: 100%;
   position: relative;
+}
+a {
+  color: #b2b2b2;
+  text-decoration: none;
 }
 /* HEADER */
 #header {
@@ -70,6 +83,7 @@ body {
   font-family: 'Raleway';
   font-weight: 500;
   font-size: 300%;
+  text-transform: none;
   margin-bottom: 5px;
 }
 #header-text h2 {
@@ -101,6 +115,22 @@ body {
   /* STYLING */
   background: #660202;
   display: table;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#navbar:after {
+  content: "";
+  width: 950px;
+  height: 0px;
+  margin-top: 48px;
+  margin-left: -475px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  z-index: 9;
+  -webkit-box-shadow: 0px 0px 8px 2px #000000;
+  -moz-box-shadow: 0px 0px 8px 2px #000000;
+  box-shadow: 0px 0px 8px 2px #000000;
 }
 #navbar p {
   /* LAYOUT */
@@ -121,6 +151,7 @@ body {
 #navbar p:hover {
   font-weight: bold;
   background: #B20404;
+  color: #b2b2b2;
 }
 #navbar p a {
   color: #f2f2f2;
@@ -145,10 +176,8 @@ body {
   display: table;
   padding-left: 10px;
   padding-right: 10px;
-}
-#footer a {
-  color: #ff7373;
-  text-decoration: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 #footer * {
   vertical-align: middle;
@@ -173,10 +202,10 @@ body {
   -ms-transition: all 0.25s ease-in-out;
 }
 #footer-leagues img {
-  background: #ffffff;
+  background: #f2f2f2;
 }
 #footer-leagues img:hover {
-  background: #ff7373;
+  background: #b2b2b2;
 }
 /* Warwick HS Info */
 #footer-whs {

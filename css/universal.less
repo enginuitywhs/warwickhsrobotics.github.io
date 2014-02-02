@@ -5,22 +5,7 @@
 // CODED IN BRACKETS
 
 // VARIABLES
-
-@col-tx: #F2F2F2;
-@col-ln: #727272;
-
-@def-padding: 10px;
-.side-padding (@padding: @def-padding) {
-    padding-left: @padding;
-    padding-right: @padding;
-}
-
-.smoothtrans {
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    -ms-transition: all 0.15s linear;
-}
+@import "vars.less";
 
 .small(@smallperc: 50%) {
     width: @smallperc;
@@ -31,6 +16,10 @@
 
 * {
     color: @col-tx;
+}
+
+a {
+    color: @col-ln;
 }
 
 h1 {
@@ -49,6 +38,20 @@ body {
     font-weight: normal;
 }
 
+/* FONT CLASSES */
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
 /* REUSED */
 
 .youtube {
@@ -57,7 +60,7 @@ body {
 
 /* HOME */
 
-#teamphoto {
+#teamphoto-box {
     width: 500px;
     height: 300px;
     border: 1px solid @col-tx;
@@ -111,4 +114,101 @@ body {
 
 #team-table .normalp p {
     font-size: 1em;
+}
+
+/* Sponsors */
+
+#sp-logos {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+}
+
+#sp-logos img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
+
+#sp-people {
+    width: 50%;
+    float: right;
+}
+
+/* GAME INFORMATION */
+
+.gameinfo {
+    margin: 0 auto;
+    table-layout: fixed;
+    padding-bottom: 20px;
+}
+
+.gameinfo * {
+    vertical-align: middle;
+}
+
+.gameinfo .gamelogo {
+    padding-right: 20px;
+    border-right: 1px solid black;
+}
+
+.gameinfo .gamelogo img {
+    width: 200px;
+}
+
+.gameinfo .gamevideo {
+    padding-left: 20px;
+}
+
+.gamecontainer {
+    display: block;
+}
+
+.gamelinks {
+    float: left;
+    height: 100%;
+}
+
+.gamelinks a {
+    .smoothtrans;
+    text-decoration: none;
+    color: @col-tx;
+}
+
+.gamelinks a:hover {
+    font-weight: bold;
+    color: @col-ln;
+    padding-left: 20px;
+}
+
+.gametext {
+    display: block;
+    float: right;
+}
+
+/* CALENDAR */
+
+#ev-gcal {
+    display: block;
+    margin: auto;
+}
+
+/* LINKS */
+
+.linkdesc {
+    font-size: 0.8em;
+}
+
+#links a {
+    .smoothtrans;
+    text-decoration: none;
+    color: @col-tx;
+}
+
+#links a:hover {
+    font-weight: bold;
+    padding-left: 20px;
+    color: @col-ln;
 }

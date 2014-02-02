@@ -5,30 +5,7 @@
 // CODED IN BRACKETS
 
 // VARIABLES
-@col-bg: #4A0101;
-@col-hf: #660202;
-@col-nv: 'col-hf';
-@col-bd: #7F0303;
-
-@col-tx: #F2F2F2;
-@col-ln: #727272;
-
-@height-hf: 150px;
-@height-nav: 50px;
-@width: 960px;
-
-@def-padding: 10px;
-.side-padding (@padding: @def-padding) {
-    padding-left: @padding;
-    padding-right: @padding;
-}
-
-.smoothtrans {
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
-    -ms-transition: all 0.15s linear;
-}
+@import "vars.less";
 
 /* LAYOUT */
 
@@ -39,25 +16,30 @@ html, body {
 }
 
 html {
-    background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
     background-color: @col-bg;
-    background-size:16px 16px;
 }
 
 body {
+    /* BASE CODE */
     padding: 0;
     width: @width;
+    /* STYLING */
     background: @col-bd;
+    .bottomround;
+    -webkit-box-shadow: 0px 0px 8px 2px #000000;
+       -moz-box-shadow: 0px 0px 8px 2px #000000;
+            box-shadow: 0px 0px 8px 2px #000000;
 }
 
 #page {
     min-height: 100%;
     height: 100%;
     position: relative;
+}
+
+a {
+    color: @col-ln;
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -103,12 +85,13 @@ body {
     vertical-align: middle;
     float: left;
 }
-@ht-lnspc: 10px;
 
+@ht-lnspc: 10px;
 #header-text h1 {
     font-family: 'Raleway';
     font-weight: 500;
     font-size: 300%;
+    text-transform: none;
     margin-bottom: (@ht-lnspc / 2);
 }
 
@@ -147,6 +130,22 @@ body {
     /* STYLING */
     background: @col-hf;
     display: table;
+    .bottomround;
+}
+
+#navbar:after {
+    content: "";
+    width: 950px;
+    height: 0px;
+    margin-top: 48px;
+    margin-left: -475px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+    -webkit-box-shadow: 0px 0px 8px 2px #000000;
+       -moz-box-shadow: 0px 0px 8px 2px #000000;
+            box-shadow: 0px 0px 8px 2px #000000;
 }
 
 #navbar p {
@@ -166,6 +165,7 @@ body {
 #navbar p:hover {
     font-weight: bold;
     background: #B20404;
+    color: @col-ln;
 }
 
 #navbar p a {
@@ -194,11 +194,7 @@ body {
     background: @col-hf;
     display: table;
     .side-padding;
-}
-
-#footer a {
-    color: #ff7373;
-    text-decoration: none;
+    .bottomround;
 }
 
 #footer * {
@@ -230,11 +226,11 @@ body {
 }
 
 #footer-leagues img {
-    background: #ffffff;
+    background: @col-tx;
 }
 
 #footer-leagues img:hover {
-    background: #ff7373;
+    background: @col-ln;
 }
 
 /* Warwick HS Info */
