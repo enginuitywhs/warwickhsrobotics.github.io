@@ -18,7 +18,7 @@ body {
   padding: 0;
   width: 960px;
   /* STYLING */
-  background: #a30303;
+  background: #f2f2f2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   -webkit-box-shadow: 0px 0px 8px 2px #000000;
@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 a {
-  color: #b2b2b2;
+  color: #1a1a1a;
   text-decoration: none;
 }
 /* HEADER */
@@ -41,12 +41,15 @@ a {
   width: 940px;
   /* STYLING */
   background: #660202;
-  color: #f2f2f2;
+  color: #2a2a2a;
   display: table;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
+}
+#header * {
+  color: #f2f2f2;
 }
 #header-logo {
   display: table-cell;
@@ -144,7 +147,7 @@ a {
 }
 #navbar p:hover {
   background: #340000;
-  color: #b2b2b2;
+  color: #a2a2a2;
   font-weight: bold;
 }
 #navbar p:first-child:hover {
@@ -187,8 +190,12 @@ a {
   border-bottom-right-radius: 10px;
 }
 #footer * {
+  color: #f2f2f2;
   vertical-align: middle;
   padding: 0;
+}
+#footer a {
+  color: #a2a2a2;
 }
 #footer-top {
   display: table-row;
@@ -213,7 +220,7 @@ a {
   background: #f2f2f2;
 }
 #footer-leagues img:hover {
-  background: #b2b2b2;
+  background: #a2a2a2;
 }
 /* Warwick HS Info */
 #footer-whs {
