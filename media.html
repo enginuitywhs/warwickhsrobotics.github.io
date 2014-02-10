@@ -24,5 +24,25 @@
         <h2>FTC</h2>
         <object width="400" height="300"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F117049898%40N08%2Fsets%2F72157640738246603%2Fshow%2F&page_show_back_url=%2Fphotos%2F117049898%40N08%2Fsets%2F72157640738246603%2F&set_id=72157640738246603&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=140556"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=140556" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F117049898%40N08%2Fsets%2F72157640738246603%2Fshow%2F&page_show_back_url=%2Fphotos%2F117049898%40N08%2Fsets%2F72157640738246603%2F&set_id=72157640738246603&jump_to=" width="400" height="300"></embed></object>
     </div>
+    <script>
+        window.parent.addEventListener('message', function (e) {
+        var eventName = e.data[0],
+        var data      = e.data[1];
+
+        switch (eventName) {
+            case 'referrer': injectBaseElement(data); break;
+            ...
+        }
+
+        }, false);
+    </script>    
+    <script>
+        function resize() {
+            var height = $(html).height();
+            
+            // Backwards – send message to parent
+            window.parent.postMessage(['setHeight', height], '*');
+        }
+    </script>
 </body>
 </html>

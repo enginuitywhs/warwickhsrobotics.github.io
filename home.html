@@ -11,7 +11,27 @@
 <body>
     <h1>Welcome!</h1>
     <img class="teamphoto" alt="Team Photo" src="./assets/home/teampic_small.jpg">
-    <p class="center" style="font-size: 0.75em;"><strong>Team photo, taken whenever</strong></p>
-    <p>This is the official site of Team Enginuity. We are Warwick High School's Robotics Team in Newport News, Virginia. This year (the 2013-2014 school year) is our second. We are glad that you have decided to take the time to come check out our website! Whether you are part of a veteran FIRST team, a rookie team or not part of a team, our site contains lots of useful information. Here, you can find current information about the 2013 FTC Game, <strong>Block Party</strong>; and the 2014 FRC Game, <strong>Aerial Ascent</strong>; along with further information about our team and our sponsors, media from previous competitons, and resources for other teams.</p>
+    <p class="center" style="font-size: 0.75em;"><strong>(un)official Team Photo</strong></p>
+    <p>This is the official site of Team Enginuity. We are Warwick High School's Robotics Team in Newport News, Virginia. This year (the 2013-2014 school year) is our second. We are glad that you have decided to take the time to come check out our website! Whether you are part of a veteran FIRST team, a rookie team or not part of a team, our site contains lots of useful information. Here, you can find current information about the 2013 FTC Game, <strong>Block Party</strong>; and the 2014 FRC Game, <strong>Aerial Assist</strong>; along with further information about our team and our sponsors, media from previous competitons, and resources for other teams.</p>
+    <script>
+        window.parent.addEventListener('message', function (e) {
+        var eventName = e.data[0],
+        var data      = e.data[1];
+
+        switch (eventName) {
+            case 'referrer': injectBaseElement(data); break;
+            ...
+        }
+
+        }, false);
+    </script>
+    <script>
+        function resize() {
+            var height = $(html).height();
+            
+            // Backwards – send message to parent
+            window.parent.postMessage(['setHeight', height], '*');
+        }
+    </script>
 </body>
 </html>
