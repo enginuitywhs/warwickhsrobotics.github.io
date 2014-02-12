@@ -81,11 +81,14 @@ a {
   font-weight: 500;
   font-size: 300%;
   text-transform: none;
-  margin-bottom: 5px;
 }
 #header-text h2 {
+  display: none;
   vertical-align: middle;
-  margin-top: 5px;
+}
+#header-text h1:hover,
+#header-text h2 {
+  display: block;
 }
 #header a {
   color: #f2f2f2;
