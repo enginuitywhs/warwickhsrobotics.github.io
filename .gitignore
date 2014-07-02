@@ -2,3 +2,5 @@
 desktop.ini
 membership.txt
 assets/vectorlogo.svg
+_site/*
+.gitignore~

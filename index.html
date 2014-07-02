@@ -19,7 +19,7 @@ Title: Index Page
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!--CSS-->
     <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway:500|Open+Sans:400,700|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href="/css/master.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/master.css" rel="stylesheet" type="text/css">
 <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
@@ -41,9 +41,17 @@ Title: Index Page
         </div>
         <div id="main">
             <h1>Welcome!</h1>
-            <img class="teamphoto" alt="Team Photo" src="./assets/home/teampic_small.jpg">
-            <p class="center" style="font-size: 0.75em;"><strong>(un)official Team Photo</strong></p>
-            <p>This is the official site of Team Enginuity. We are Warwick High School's Robotics Team in Newport News, Virginia. This year (the 2013-2014 school year) is our second. We are glad that you have decided to take the time to come check out our website! Whether you are part of a veteran FIRST team, a rookie team or not part of a team, our site contains lots of useful information. Here, you can find current information about the 2013 FTC Game, <strong>Block Party</strong>; and the 2014 FRC Game, <strong>Aerial Assist</strong>; along with further information about our team and our sponsors, media from previous competitons, and resources for other teams.</p>
+            <a href="team.html"><img class="teamphoto" alt="Team Photo" src="./assets/home/teampic2014_small.jpg"></a>
+            <p class="center" style="font-size: 0.75em;"><strong>Team Enginuity 2014</strong></p>
+            <div id="index-blurb">
+                <p>We are a high school robotics team from Warwick High School in Newport News, Virginia. We are fairly new -- we were formed in 2012. We compete in three robotics competitions: the FIRST Tech Challenge, with an all-male team (5969) and an all-female team (7084); the FIRST Robotics Challenge, with a co-ed team (4538); and the MIT SeaPerch Remotely Operated Vehicle Challenge. We are a group of determined, creative students from grades 9-12.</p>
+                <p><strong>Our goal is to expand mankind’s horizons in the fields of science, technology, engineering, and mathematics; and to instill a sense of leadership, community, and innovation in our members.</strong></p>
+                <p>We are glad that you have decided to stop by and take the time to come check out our website! Whether you are part of a veteran FIRST team, a rookie team or not part of a team, our site contains lots of useful information. Here, you can find current information about the 2013 FTC Game, <strong>Block Party</strong>; and the 2014 FRC Game, <strong>Aerial Assist</strong>; along with further information about our team and our sponsors, media from previous competitions, and resources for other teams.</p>
+            </div>
+            <div id="index-twitter">
+                <a class="twitter-timeline" height="300px" data-dnt="true" href="https://twitter.com/EnginuityWHS"  data-widget-id="422480523475165184">Tweets by @EnginuityWHS</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
         </div>
         <div id="footer">
             {% include footer.html %}

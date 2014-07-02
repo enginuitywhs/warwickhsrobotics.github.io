@@ -10,7 +10,7 @@ Title: Sponsors Page
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!--CSS-->
     <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway:500|Open+Sans:400,700|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href="/css/master.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/master.css" rel="stylesheet" type="text/css">
 <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
@@ -30,23 +30,34 @@ Title: Sponsors Page
             {% include navbar.html %}
         </div>
         <div id="main">
-            <h1>Sponsors</h1>
-            <p>Team Enginuity would like to thank the following organizations and individuals for their contributions. These contributions help fund expenditures such as registration fees, travel expenses, extra parts, marketing costs, and more.</p>
-            <div id="sp-logos" class="center">
-                <h2>Organizations</h2>
-                <a href="http://sbo.nn.k12.va.us" target="_blank"><img alt="Newport News Public Schools" src="./assets/spon/nnps.gif"></a>
-                <a href="http://robotics.nasa.gov" target="_blank"><img alt="NASA" src="./assets/spon/nasa.png"></a>
-                <a href="http://www.rockwellcollins.com/" target="_blank"><img alt="Rockwell Collins" src="./assets/spon/rockwell.png"></a>
+            <div id="sp-appeal">
+                <h1>Want to be a sponsor?</h1>
+                <p>The support of these aforementioned organizations and individuals is, as always greatly appreciated and helpful to us. However, we are always in need of more support. Keep in mind that:</p>
+                <ul>
+                    <li>With your added support, we can do <strong>more</strong>. More <strong>competitions</strong>. More <strong>community outreach projects</strong>. More <strong>robots.</strong> And all of that leads to <strong>more inspired young students</strong>.</li>
+                    <li>Your support does <em>NOT</em> have to be financial. We are always looking for more mentors, supplies and anything that we can use to our advantage.</li>
+                    <li>The amount of support you/your organization provides is <em>NOT</em> important. Any contribution, no matter how big or how small, will make a difference.</li>
+                </ul>
+                <a target="_blank" class="center" style="font-size: 1.5em; text-decoration: underline;" href="./assets/spon.pdf"><strong>View the 2014 Sponsorship Appeal!</strong></a>
             </div>
-            <div id="sp-people" class="center">
-                <h2>Individuals</h2>
-                <p>Christian May</p>
+            <div id="sp-list">
+                <h1>Current Sponsors</h1>
+                <p>Team Enginuity would like to thank the following organizations and individuals for their contributions. These contributions help fund expenditures such as registration fees, travel expenses, extra parts, marketing costs, and more.</p>
+                <div id="sp-logos" class="center">
+                    <h2>Organizations</h2>
+                    <a href="http://sbo.nn.k12.va.us" target="_blank"><img alt="Newport News Public Schools" src="./assets/spon/nnps.gif"></a>
+                    <a href="http://robotics.nasa.gov" target="_blank"><img alt="NASA" src="./assets/spon/nasa.png"></a>
+                    <a href="http://www.rockwellcollins.com/" target="_blank"><img alt="Rockwell Collins" src="./assets/spon/rockwell.png"></a>
+                </div>
+                <div id="sp-people" class="center">
+                    <h2>Individuals</h2>
+                    <p>Christian May</p>
+                </div>
             </div>
         </div>
         <div id="footer">
             {% include footer.html %}
         </div>
-    </div>
     {% include scripts.html %}
 </body>
 </html>

@@ -411,6 +411,35 @@ body {
     margin: 0 auto;
 }
 
+@indpad: 15px;
+
+#index-blurb {
+    display: inline-block;
+    padding-right: @indpad / 2;
+    width: 65%;
+}
+
+#index-blurb * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#index-blurb p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#index-twitter {
+    display: inline-block;
+    padding-right: @indpad / 2;
+    width: 32%;
+}
+
+#index-twitter * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* TEAM TABLE */
 @sep: 20px;
 
@@ -462,10 +491,36 @@ body {
 
 /* Sponsors */
 
+#sp-appeal {
+    width: 100%;
+    display: block;
+}
+
+#sp-appeal ul li {
+    margin-bottom: 10px;
+}
+
+/* #sp-appeal-button {
+    float: right;
+    width: 25%;
+    margin-left: 10px;
+    background: @col-bd;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+} */
+
+#sp-list {
+    width: 100%;
+    display: block;
+}
+
 #sp-logos {
     width: 50%;
-    margin: 0 auto;
     float: left;
+    display: inline;
 }
 
 #sp-logos img {
@@ -479,6 +534,7 @@ body {
 #sp-people {
     width: 50%;
     float: right;
+    display: inline;
 }
 
 /* GAME INFORMATION */
@@ -555,4 +611,37 @@ body {
     font-weight: bold;
     padding-left: 20px;
     color: @col-ln;
+}
+
+/* MEDIA */
+
+@padding: 5px;
+
+.media h2 {
+    text-align: center;
+}
+
+.media object {
+    margin: auto;
+}
+
+#media-ftc {
+    margin: auto;
+    padding-left: @padding;
+    padding-right: @padding / 2;
+    display: inline-block;
+}
+
+#media-frc {
+    margin: auto;
+    padding-left: @padding / 2;
+    padding-right: @padding;
+    display: inline-block;
+}
+
+#media-com {
+    margin: auto;
+    padding-left: @padding / 2;
+    padding-right: @padding / 2;
+    display: inline-block;
 }
