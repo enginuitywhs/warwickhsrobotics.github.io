@@ -1,0 +1,70 @@
+---
+Title: FTC Page
+---
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--CSS-->
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway:500|Open+Sans:400,700|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="/css/master.css" rel="stylesheet" type="text/css">
+<!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+<!--OTHER-->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <title>About FTC | Team Enginuity</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            {% include header.html %}
+        </div>
+        <div id="navbar">
+            {% include navbar.html %}
+        </div>
+        <div id="main">
+            <h1>About FTC</h1>
+            <p>2013-14 Game: <strong>Block Party</strong></p>
+            <table class="gameinfo center">
+                <tr>
+                    <td class="gamelogo"><img alt="FTC Block Party logo" src="../assets/first/ftc2013.png"></td>
+                    <td class="gamevideo"><iframe width="400" height="225" src="http://www.youtube.com/embed/UPAATO-NpcM" frameborder="0" allowfullscreen></iframe></td>
+                </tr>
+            </table>
+            <div class="gamecontainer">
+                <div class="gamelinks">
+                    <h2>Related Resources:</h2>
+                    <ul>
+                        <li><a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Game_Manual_Part_1.pdf">
+                            Game Manual (Part 1)</a></li>
+                        <li><a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Game_Manual_Part_2.pdf">
+                            Game Manual (Part 2)</a></li>
+                        <li><a target="_blank" href="http://www.usfirst.org/roboticsprograms/ftc/team-resources">
+                            Team Resources</a></li>
+                        <li><a target="_blank" href="http://www.usfirst.org/roboticsprograms/ftc/mentors">
+                            Mentor Resources</a></li>
+                        <li><a target="_blank" href="http://ftcforum.usfirst.org/forum.php">
+                            FTC Forum (Official by FIRST)</a></li>
+                    </ul>
+                </div>
+                <div class="gametext">
+                    <p>FTC BLOCK PARTY! is played on a 12’x12’ square field with approximately 1’-high walls and a soft foam mat playing surface. Two randomly selected teams are paired together as an Alliance to play one match against a second Alliance. Alliances are designated as either “Red” or “Blue.”</p> 
+                    <p>Scoring Elements are 100, 2”, 2oz. plastic blocks. These blocks are yellow and can be used by all robots. At the center of the field is an assembly that includes a center bridge, pull-up bar, and two pendulums – each with four “pendulum goal baskets.” Below the pendulums are floor scoring areas. An Infrared (IR) Beacon is randomly placed under one of the four goals on each pendulum after robots are placed on the field, but before the Autonomous period starts. The field includes tape to aid robot navigation and to mark protected areas. Each Alliance also has their own flagpole in opposite corners of the field.</p>
+                    <p>At the start of a match, blocks are located in the two corners at the front and back of the playing field and are distributed evenly with approximately 48 per corner at the start of the match. Each robot starts with one block which teams can pre-load onto their robot. Robots may not possess or control more than four blocks at any time. Each Alliance starts with their robots touching the outer field perimeter wall on their side of the playing field.Matches have two distinct periods of play: a 30-second Autonomous period followed by a two-minute Driver-Controlled period, which includes a 30-second End Game.</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            {% include footer.html %}
+        </div>
+    </div>
+    {% include scripts.html %}
+</body>
+</html>

@@ -1,0 +1,44 @@
+---
+Title: Resources Page
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--CSS-->
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway:500|Open+Sans:400,700|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="/css/master.css" rel="stylesheet" type="text/css">
+<!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+<!--OTHER-->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Resources | Team Enginuity</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            {% include header.html %}
+        </div>
+        <div id="navbar">
+            {% include navbar.html %}
+        </div>
+        <div id="main">
+            <h1>Resources</h1>
+            <h2>Robot Code</h2>
+            <p>Here we have released the code that we have written for our robots.</p>
+            <h3>FTC (written in RobotC)</h3>
+            <h3>FRC (written in Java)</h3>
+        </div>
+        <div id="footer">
+            {% include footer.html %}
+        </div>
+    </div>
+    {% include scripts.html %}
+</body>
+</html>

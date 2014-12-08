@@ -187,7 +187,8 @@ a {
     /* LAYOUT */
     display: table-cell;
     // MUST BE UPDATED IF MORE LINKS ARE ADDED
-    width: (@width / 10);
+    @navelements: 11;
+    width: (@width / @navelements);
     vertical-align: middle;
     .side-padding(5px);
     /* STYLING */
