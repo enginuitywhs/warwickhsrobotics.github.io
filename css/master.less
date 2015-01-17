@@ -8,8 +8,8 @@
 @col-bg: #4A0101;
 @col-hf: #660202;
 @col-nv: 'col-hf';
-@col-bd: #F2F2F2;
 
+@col-bd: #F2F2F2;
 @col-tx: #2a2a2a;
 @col-ln: #1a1a1a;
 
@@ -133,6 +133,11 @@ a {
 #header-text h2 {
     margin-top: @ht-lnspc / 2;
     vertical-align: middle;
+    display: inline;
+}
+
+#header-text h2 #royaldragons {
+    display: inline;
 }
 
 #header a {
@@ -187,7 +192,7 @@ a {
     /* LAYOUT */
     display: table-cell;
     // MUST BE UPDATED IF MORE LINKS ARE ADDED
-    @navelements: 11;
+    @navelements: 10;
     width: (@width / @navelements);
     vertical-align: middle;
     .side-padding(5px);
@@ -486,7 +491,6 @@ body {
     display: block;
     border: 0;
     text-align: left;
-    font-size: 1.5em;
 }
 
 #team-table .normalp p {
