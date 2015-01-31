@@ -446,7 +446,6 @@ body {
 
 .teamphoto {
     display: block;
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -500,38 +499,36 @@ body {
     border-right: 1px solid @col-tx;
 }
 
+#team-table tr td h2 {
+    text-transform: none;
+}
+
 #team-table tr td:nth-child(2) {
     padding-left: (@sep / 2);
 }
 
-#team-table tr td p:last-child:after {
+#team-table tr:nth-child(2) td p {
+    display: inline;
+}
+
+#team-table tr:nth-child(2) td p:last-child:after { /* ANOTHER DIRTY FIX */
     content: " ";
 }
 
-#team-table tr td p:after {
+#team-table tr:nth-child(2) td p:after {
     content: ",";
 }
 
-#team-table thead tr td {
+#team-table tr:first-child td {
     text-transform: none;
     border-bottom: 1px solid @col-tx;
 }
 
 #team-table tr td p {
-    display: inline;
-    border: 0;
-    text-align: left;
-    font-size: 0.8em;
-}
-
-#team-table tr:last-child td p {
     display: block;
     border: 0;
     text-align: left;
-}
-
-#team-table .normalp p {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 /* Sponsors */
